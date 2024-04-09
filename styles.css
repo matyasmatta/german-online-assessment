@@ -1,0 +1,100 @@
+body {
+    font-family: 'Inter', Arial, sans-serif; /* Use Inter font as the primary font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start (top) of the container */
+    min-height: 100vh; /* Ensure body fills the viewport height */
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically by default */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%; /* 5% offset from the top */
+    max-width: 1000px; /* Set maximum width for the container */
+    width: 100%; /* Ensure container takes up full width within the max-width limit */
+}
+
+.article-box {
+    width: 100%; /* Set width to 100% within the container */
+    padding: 20px;
+    margin: 10px 0; /* Adjust vertical margin */
+    background-color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    line-height: 1.5;
+    overflow: hidden;
+    font-family: 'Inter', Arial, sans-serif; /* Use Inter font for article text */
+}
+.article-box {
+    /* Other styles */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+
+/* Hover effect for the left block */
+#article1:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Hover effect for the right block */
+#article2:hover {
+    background-color: #dc3545; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Styling for the skipButton */
+#skipButton {
+    margin-top: 20px; /* Add spacing between articles and button */
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px;
+    font-family: "Inter";
+    background-color: #268f40; /* Orange background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the skipButton */
+#skipButton:hover {
+    background-color: #5f5f5f; /* Darker orange on hover */
+}
+
+/* Styling for the skipButton */
+#submitButton {
+    margin-top: 10px; /* Add spacing between articles and button */
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px;
+    font-family: "Inter";
+    background-color: #5d5dea; /* Orange background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the skipButton */
+#submitButton:hover {
+    background-color: #000000; /* Darker orange on hover */
+}
+
+/* Media query for screens up to 800px (mobile layout) */
+@media (min-width: 801px) {
+    .container {
+        flex-direction: row; /* Arrange children in a row for desktop layout */
+    }
+
+    .article-box {
+        width: 45%; /* Set width for each box to 45% for side-by-side layout */
+        margin: 10px; /* Adjust margin for spacing between boxes */
+    }
+}
